@@ -7,9 +7,45 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MyFirstClass.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
+        //클래스 메소드는 초기화도 하지 않고 메소드를 호출 할 수 있다.
+        //메소드 호출 방법 [클래스 또는 인스턴스의 이름 (띄어쓰기) 메소드 이름]
+        [MyFirstClass itIsClassMethod];
+        
+        //MyFirstClass의 인스턴스(객체)를 선언하고 초기화 된다.
+        //instance 라는 이름을 가진 MyFirstClass 클래스의 인스턴스를 만들어라 라는 의미이며
+        //alloc, init은 대표적인 클래스 메소드로 메모리 할당하고 초기화하여 인스턴스를 생성하는 것이다.
+        MyFirstClass *instance = [[MyFirstClass alloc] init];
+        
+        //인스턴스의 인스턴스 변수인 myName을 세팅
+        [instance setMyName:@"kiminy"];
+        
+        //세팅된 myName을 name이라는 새로운 인스턴스에 넣어줌
+        //NSString도 클래스 인것 같다.
+        NSString *name = [instance myName];
+        NSLog(@"My name is %@",name);
+        
+        //mySecret을 세팅
+        [instance setMySecret:@"It's top secret!!"];
+        NSLog(@"My secret is %@", [instance getMySecret]);
+        
+        //myFirstInt 세팅 [instance setMyFirstInt : 88]; 과 같은 효과
+        instance.myFistInt = 88;
+        NSLog(@"myFirstInt : %d", [instance myFistInt]);
+        
+        // can change property values...
+        instance.myName = @"my name";
+        [instance setMyFistInt:77];
+        
+        NSLog(@"My name is %@", [instance myName]);
+        NSLog(@"myFirstInt : %d", instance.myFistInt);
+        
+        //myName 과 my FirstInt는 setter과 getter를 자동으로 만들었고 mySecret은 setter 와 getter를 하나하나 만들었다. 
+        
         // insert code here...
         
         /*
@@ -79,6 +115,7 @@ int main(int argc, const char * argv[]) {
         
         */
         
+        /*
         double val_double = 3532.048394;
         
         //%%는 %를 표현하기 위한것
@@ -91,7 +128,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%%15lf  : %15lf", val_double);      //15칸 표현 -> 15칸 표현되는데 4칸 남아서 빈칸으로 표현
         NSLog(@"%%-15lf : %-15lf", val_double);     //15칸 표현, 좌측정렬
         NSLog(@"%%+15lf : %+15lf",val_double);      //아무 의미 없음.
-        
+        */
         
     }
     return 0;
