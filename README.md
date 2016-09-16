@@ -2,4 +2,4 @@
 ===================
 
 
-**YagomeBlog** 의 **Objective-C** 강의
+**yagomBlog** 의 **Objective-C** 강의
