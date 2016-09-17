@@ -33,4 +33,22 @@
     NSLog(@"It is class method. It work without alloc or init");
 }
 
+- (NSInteger) addTwoIntegersWithFirstInt:(NSInteger)firstInteger secondInt:(NSInteger)secondInteger{
+    return firstInteger + secondInteger;
+}
+
+-(NSString *) changeToUpperOrLowerCaseWithString:(NSString *)targetString isToUpperCase:(BOOL)isToUpperCase{
+    if( isToUpperCase == YES){
+        return [targetString uppercaseString];
+    }else{
+        return [targetString lowercaseString];
+    }
+}
+
+-(void) printFoo{
+    NSLog(@"Foo");
+}
+
+
+
 @end

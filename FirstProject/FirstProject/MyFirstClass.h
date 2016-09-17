@@ -33,6 +33,11 @@
 //클래스 메소드, 인스턴스에서는 사용되지 않음 ( 객체가 되기전에 사용되는듯 )
 + (void) itIsClassMethod;                   // 그냥 처음 만들어본 클래스 메소드
 
+//New instance Methods...
+-(NSInteger) addTwoIntegersWithFirstInt:(NSInteger)firstInteger secondInt:(NSInteger)secondInteger;
+-(NSString *) changeToUpperOrLowerCaseWithString:(NSString *)targetString isToUpperCase:(BOOL)isToUpperCase;
+-(void) printFoo;
+
 @end
 
 

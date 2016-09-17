@@ -12,6 +12,44 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        
+        //인스턴스를 만들고 초기화 한다.
+        MyFirstClass *instance = [[MyFirstClass alloc] init];
+        
+        NSInteger firstInteger = 100;
+        NSInteger secondInteger = 200;
+        NSInteger resultInteger = 0;
+        
+        // addTwoIntegersWithFirstInt: secondIt :  라는 인스턴스 메소드를 호출하여 그 반환값을 resultInteger에 저장하낟.
+        
+        resultInteger = [instance addTwoIntegersWithFirstInt: firstInteger secondInt:secondInteger];
+        
+        //적절한 로그로 값을 확인한다.
+        NSLog(@"resultInteger : %ld (%ld + %ld)", resultInteger, firstInteger, secondInteger);
+        
+        //두 정수의 값을 변환
+        firstInteger = 150;
+        secondInteger = -200;
+        
+        resultInteger = [instance addTwoIntegersWithFirstInt:firstInteger secondInt:secondInteger];
+        
+        NSLog(@"resultInteger : %ld (%ld + %ld)",resultInteger, firstInteger, secondInteger);
+        
+        //yafomString이라는 이름의 스트링
+        NSString *yagomString = @"Hello, I'm Yagom !!";
+        NSString *resultString = NULL;
+        
+        //changeToupperOrLowerWithString: isToUpperCase : 메소드를 호출하여
+        //대문자로 변환하여 그 반환값을 resultString에 저장한다.
+        resultString = [instance changeToUpperOrLowerCaseWithString:yagomString isToUpperCase:YES];
+        NSLog(@"resultString: %@",resultString);
+        
+        //changeToUpperOrLowerWithString: isToUpperCase: 메소드를 호출하여
+        //소문자로 변환하여 그 반환값을 로그로 찍어본다..
+        NSLog(@"resultString : %@",[instance changeToUpperOrLowerCaseWithString:yagomString isToUpperCase:NO]);
+        [instance printFoo];
+        
+        /*
         //클래스 메소드는 초기화도 하지 않고 메소드를 호출 할 수 있다.
         //메소드 호출 방법 [클래스 또는 인스턴스의 이름 (띄어쓰기) 메소드 이름]
         [MyFirstClass itIsClassMethod];
@@ -45,6 +83,9 @@ int main(int argc, const char * argv[]) {
         NSLog(@"myFirstInt : %d", instance.myFistInt);
         
         //myName 과 my FirstInt는 setter과 getter를 자동으로 만들었고 mySecret은 setter 와 getter를 하나하나 만들었다. 
+        
+         */
+        
         
         // insert code here...
         
