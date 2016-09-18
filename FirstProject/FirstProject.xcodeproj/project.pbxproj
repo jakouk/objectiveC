@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		73375A281D8C1D9C00F9C6A1 /* MyFirstClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 73375A271D8C1D9C00F9C6A1 /* MyFirstClass.m */; };
 		7374BF431D8ABA4D004B96B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7374BF421D8ABA4D004B96B1 /* main.m */; };
+		73FE471A1D8E839400EF859A /* FirstChildClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE47191D8E839400EF859A /* FirstChildClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		73375A271D8C1D9C00F9C6A1 /* MyFirstClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFirstClass.m; sourceTree = "<group>"; };
 		7374BF3F1D8ABA4D004B96B1 /* FirstProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		7374BF421D8ABA4D004B96B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73FE47181D8E839400EF859A /* FirstChildClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstChildClass.h; sourceTree = "<group>"; };
+		73FE47191D8E839400EF859A /* FirstChildClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstChildClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				7374BF421D8ABA4D004B96B1 /* main.m */,
 				73375A261D8C1D9C00F9C6A1 /* MyFirstClass.h */,
 				73375A271D8C1D9C00F9C6A1 /* MyFirstClass.m */,
+				73FE47181D8E839400EF859A /* FirstChildClass.h */,
+				73FE47191D8E839400EF859A /* FirstChildClass.m */,
 			);
 			path = FirstProject;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7374BF431D8ABA4D004B96B1 /* main.m in Sources */,
+				73FE471A1D8E839400EF859A /* FirstChildClass.m in Sources */,
 				73375A281D8C1D9C00F9C6A1 /* MyFirstClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
